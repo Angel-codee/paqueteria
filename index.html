@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Paqueteria</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Organizacion de Entregas</h1>
+
+    <table id="tabla-paquetes">
+        <thead>
+            <tr>
+                <th>Prioridad</th>
+                <th>Paquete</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <div>
+        <label for="prioridad">Prioridad:</label>
+        <select id="prioridad">
+            <option value="muy urgente">Muy Urgente</option>
+            <option value="urgente">Urgente</option>
+            <option value="poco urgente">Poco Urgente</option>
+            <option value="normal">Normal</option>
+        </select>
+        <label for="nombrePaquete">Nombre del Paquete:</label>
+        <input type="text" id="nombrePaquete" required>
+        <button id="agregarPaquete">Agregar Paquete</button>
+    </div>
+
+    <button id="ordenarPaquetes">Ordenar Paquetes por Prioridad</button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
